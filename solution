@@ -1,0 +1,31 @@
+Console.WriteLine("Veuillez entrer un nombre minimum: ");
+int nombreMin = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Veuillez entrer un nombre maximum: ");
+int nombreMax = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Veuillez entrer un nombre Integer: ");
+int nombreinteger = Convert.ToInt32(Console.ReadLine());
+
+
+Console.WriteLine("Votre nombre min est: " + nombreMin);
+Console.WriteLine("Votre nombre Max est: " + nombreMax);
+Console.WriteLine("Votre nombre integer est: " + nombreinteger);
+
+if (nombreinteger > nombreMax) 
+{
+    Console.WriteLine($"You have entered " + nombreinteger + " which is greater than " + nombreMax + " which is the maximum");
+    Console.WriteLine("Resulting integer: " + nombreMax);
+}
+
+else if (nombreinteger < nombreMin)
+{
+    Console.WriteLine($"You have entered " + nombreinteger + " which is lower than " + nombreMax + " which is the minimum");
+    Console.WriteLine("Resulting integer: " + nombreMin);
+}
+
+else if (nombreMax < nombreinteger)
+{
+    Console.WriteLine($"You have entered " + nombreinteger + " which is greater than " + nombreMin + " which is the Maximum");
+    Console.WriteLine("Resulting integer: " + nombreMin);
+}
